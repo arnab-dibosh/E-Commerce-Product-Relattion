@@ -3,11 +3,14 @@
 
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">  
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">    
     <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
     <script src="vivagraph.js"></script>
     <script src="data.js"></script>
-    <script src="operation.js"></script>
+    <script src="graphModule.js"></script>
+    <script src="searchModule.js"></script>
   </head>
 
   <body>
@@ -17,18 +20,24 @@
         <option value="Dress">Dress</option>
         <option value="Electronics">Electronics</option>
     </select>
+    <div>
+      <label for="search">Search Product: </label>
+      <input id="search">
+    </div>
    </div>
    <div id="graphDiv"></div>
   <script>
     $(document).ready(function() { 
-       var filProducts;
-        
+       searchModule.loadsearch();
+       
+       var filProducts;        
         $("#fitlerCat").change(function() {
           graphModule.category = $(this).children("option:selected").val();
-          filProducts=graphModule.filterProduct(products);
+          filProducts= graphModule.filterProduct();
+          searchModule.loadsearch();
           drawGraph(filProducts);
         });
-         filProducts=graphModule.filterProduct(products);
+         filProducts=graphModule.filterProduct();
          graphModule.drawGraph(filProducts);
        
      });

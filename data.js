@@ -80,7 +80,7 @@ var products=
     },
     {
         "asin": "D3",
-        "title": "Gabadin",
+        "title": "Shocks",
         "price": 600,
         "imUrl": "Dress/3.jpg",
         "related":
@@ -93,7 +93,7 @@ var products=
     },
     {
         "asin": "D4",
-        "title": "Gabadin",
+        "title": "Shorts",
         "price": 600,
         "imUrl": "Dress/4.jpg",
         "related":
@@ -106,7 +106,7 @@ var products=
     },
     {
         "asin": "D5",
-        "title": "Gabadin",
+        "title": "T-Shirt",
         "price": 600,
         "imUrl": "Dress/5.jpg",
         "related":

@@ -2,11 +2,11 @@ var graphModule = (function (){
   
    this.category='Books';
 
-   this.filterProduct= function(allProducts){       
-        var products= allProducts.filter(x=> {
+   this.filterProduct= function(){       
+        var fproducts= products.filter(x=> {
             return x.categories.some(cat=>cat.includes(category));
         });
-     return products; 
+     return fproducts; 
    }
 
    this.drawGraph= function (products){
