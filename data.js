@@ -142,7 +142,7 @@ var products=
         "salesRank": {"Toys & Games": 211836},
         "brand": "Coxlures",
         "categories": [["Electronics"]]
-    },
+    },    
     {
         "asin": "E3",
         "title": "Macbook",
@@ -155,5 +155,18 @@ var products=
         "salesRank": {"Toys & Games": 211836},
         "brand": "Coxlures",
         "categories": [["Electronics"]]
-    }
+    },
+    {
+        "asin": "E4",
+        "title": "Laptop Slim",
+        "price": 600,
+        "imUrl": "Electronics/2.jpg",
+        "related":
+        {
+            "also_bought": ["E1","E3"]
+        },
+        "salesRank": {"Toys & Games": 211836},
+        "brand": "Coxlures",
+        "categories": [["Electronics"]]
+    },
 ]

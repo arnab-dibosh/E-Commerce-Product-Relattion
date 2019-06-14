@@ -20,10 +20,13 @@
         <option value="Dress">Dress</option>
         <option value="Electronics">Electronics</option>
     </select>
+    </br>
     <div>
-      <label for="search">Search Product: </label>
       <input id="search">
+      <button id="btnGo" >Search</button>
     </div>
+    </br>
+    <div><button id="btnAll" >Show All</button></div>
    </div>
    <div id="graphDiv"></div>
   <script>
@@ -33,14 +36,37 @@
        var filProducts;        
         $("#fitlerCat").change(function() {
           graphModule.category = $(this).children("option:selected").val();
-          filProducts= graphModule.filterProduct();
+          graphModule.searchTerm='';
+          $('#search').val('');
           searchModule.loadsearch();
-          drawGraph(filProducts);
+          var nodes= searchModule.prepareNodes();
+          var links= searchModule.prepareLinks();
+
+          graphModule.drawGraph(nodes, links);
+          
         });
-         filProducts=graphModule.filterProduct();
-         graphModule.drawGraph(filProducts);
-       
-     });
+
+        $('#btnGo').click(function(){
+            graphModule.searchTerm= $('#search').val();
+            var nodes= searchModule.prepareNodes();
+            var links= searchModule.prepareLinks();
+
+            graphModule.drawGraph(nodes, links);
+        });
+
+        $('#btnAll').click(function(){
+          graphModule.searchTerm='';
+          $('#search').val('');
+          var nodes= searchModule.prepareNodes();
+          var links= searchModule.prepareLinks();
+
+          graphModule.drawGraph(nodes, links);
+        });
+
+       var nodes= searchModule.prepareNodes();
+       var links= searchModule.prepareLinks();
+       graphModule.drawGraph(nodes, links);
+     });    
 
   </script>
   </body>
