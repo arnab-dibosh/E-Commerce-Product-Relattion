@@ -51,6 +51,97 @@ var products=
         "salesRank": {"Toys & Games": 211836},
         "brand": "Coxlures",
         "categories": [["Books"]]
+    },    
+    {
+        "asin": "B5",
+        "title": "Stony Sky",
+        "price": 300,
+        "imUrl": "Books/5.jpg",
+        "related":
+        {
+            "also_bought": ["B6", "B3"]
+        },
+        "salesRank": {"Toys & Games": 211836},
+        "brand": "Coxlures",
+        "categories": [["Books"]]
+    },
+    {
+        "asin": "B6",
+        "title": "The Collapsing Empire",
+        "price": 500,
+        "imUrl": "Books/6.jpg",
+        "related":
+        {
+            "also_bought": ["B5"]
+        },
+        "salesRank": {"Toys & Games": 211836},
+        "brand": "Coxlures",
+        "categories": [["Books"]]
+    },
+    {
+        "asin": "B7",
+        "title": "New York",
+        "price": 400,
+        "imUrl": "Books/7.jpg",
+        "related":
+        {
+            "also_bought": ["B4", "B5"]
+        },
+        "salesRank": {"Toys & Games": 211836},
+        "brand": "Coxlures",
+        "categories": [["Books"]]
+    },
+    {
+        "asin": "B8",
+        "title": "Provenance",
+        "price": 600,
+        "imUrl": "Books/8.jpg",
+        "related":
+        {
+            "also_bought": ["B5", "B6"]
+        },
+        "salesRank": {"Toys & Games": 211836},
+        "brand": "Coxlures",
+        "categories": [["Books"]]
+    },
+    {
+        "asin": "B9",
+        "title": "Milkman",
+        "price": 600,
+        "imUrl": "Books/9.jpg",
+        "related":
+        {
+            "also_bought": ["B6", "B7"]
+        },
+        "salesRank": {"Toys & Games": 211836},
+        "brand": "Coxlures",
+        "categories": [["Books"]]
+    },
+    {
+        "asin": "B10",
+        "title": "Washington Black",
+        "price": 600,
+        "imUrl": "Books/10.jpg",
+        "related":
+        {
+            "also_bought": ["B8", "B9"]
+        },
+        "salesRank": {"Toys & Games": 211836},
+        "brand": "Coxlures",
+        "categories": [["Books"]]
+    },
+    {
+        "asin": "B11",
+        "title": "Everything Under",
+        "price": 600,
+        "imUrl": "Books/11.jpg",
+        "related":
+        {
+            "also_bought": ["B1", "B2"]
+        },
+        "salesRank": {"Toys & Games": 211836},
+        "brand": "Coxlures",
+        "categories": [["Books"]]
     },
     {
         "asin": "D1",
